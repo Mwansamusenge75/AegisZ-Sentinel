@@ -1,0 +1,38 @@
+{
+  "note": "Province centroid coordinates (provincial capital locations) for marker placement and map centering. These are well-documented, stable geographic facts, not survey-grade boundary polygons. A full boundary GeoJSON (province outlines) can be dropped into this same file path in a future release without any code changes — the map loader reads 'type': 'FeatureCollection' if present, or falls back to this centroid format.",
+  "type": "centroids",
+  "provinces": [
+    { "name": "Central",      "capital": "Kabwe",      "lat": -14.4469, "lng": 28.4464 },
+    { "name": "Copperbelt",   "capital": "Ndola",      "lat": -12.9587, "lng": 28.6366 },
+    { "name": "Eastern",      "capital": "Chipata",    "lat": -13.6333, "lng": 32.6500 },
+    { "name": "Luapula",      "capital": "Mansa",      "lat": -11.1997, "lng": 28.8943 },
+    { "name": "Lusaka",       "capital": "Lusaka",     "lat": -15.3875, "lng": 28.3228 },
+    { "name": "Muchinga",     "capital": "Chinsali",   "lat": -10.5500, "lng": 32.0833 },
+    { "name": "Northern",     "capital": "Kasama",     "lat": -10.2128, "lng": 31.1808 },
+    { "name": "North-Western","capital": "Solwezi",    "lat": -12.1736, "lng": 26.3989 },
+    { "name": "Southern",     "capital": "Choma",      "lat": -16.8167, "lng": 26.9833 },
+    { "name": "Western",      "capital": "Mongu",      "lat": -15.2500, "lng": 23.1333 }
+  ],
+  "major_cities": [
+    { "name": "Lusaka",     "province": "Lusaka",        "lat": -15.3875, "lng": 28.3228, "is_capital_city": true },
+    { "name": "Ndola",      "province": "Copperbelt",    "lat": -12.9587, "lng": 28.6366 },
+    { "name": "Kitwe",      "province": "Copperbelt",    "lat": -12.8024, "lng": 28.2132 },
+    { "name": "Kabwe",      "province": "Central",       "lat": -14.4469, "lng": 28.4464 },
+    { "name": "Chingola",   "province": "Copperbelt",    "lat": -12.5288, "lng": 27.8861 },
+    { "name": "Livingstone","province": "Southern",      "lat": -17.8419, "lng": 25.8543 },
+    { "name": "Chipata",    "province": "Eastern",       "lat": -13.6333, "lng": 32.6500 },
+    { "name": "Kasama",     "province": "Northern",      "lat": -10.2128, "lng": 31.1808 },
+    { "name": "Solwezi",    "province": "North-Western", "lat": -12.1736, "lng": 26.3989 },
+    { "name": "Mongu",      "province": "Western",       "lat": -15.2500, "lng": 23.1333 },
+    { "name": "Mansa",      "province": "Luapula",       "lat": -11.1997, "lng": 28.8943 },
+    { "name": "Chinsali",   "province": "Muchinga",      "lat": -10.5500, "lng": 32.0833 },
+    { "name": "Choma",      "province": "Southern",      "lat": -16.8167, "lng": 26.9833 },
+    { "name": "Mazabuka",   "province": "Southern",      "lat": -15.8560, "lng": 27.7560 }
+  ],
+  "country_bounds": {
+    "center": { "lat": -13.1339, "lng": 27.8493 },
+    "default_zoom": 6,
+    "sw": { "lat": -18.1, "lng": 21.9 },
+    "ne": { "lat": -8.2,  "lng": 33.7 }
+  }
+}

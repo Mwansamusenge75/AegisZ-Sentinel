@@ -1,0 +1,70 @@
+/* AegisZ Sentinel - Custom Styles */
+
+/* Scrollbar styling for dark theme */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+/* Smooth transitions */
+* {
+    transition-property: color, background-color, border-color, opacity;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+}
+
+/* Map placeholder grid animation */
+@keyframes gridPulse {
+    0%, 100% { opacity: 0.1; }
+    50% { opacity: 0.15; }
+}
+
+#zambia-map .absolute {
+    animation: gridPulse 4s ease-in-out infinite;
+}
+
+/* Status indicator pulse */
+.animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Table row hover enhancement */
+tbody tr:hover {
+    background-color: rgba(51, 65, 85, 0.5);
+}
+
+/* Card hover lift */
+.bg-aegisz-panel {
+    transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.bg-aegisz-panel:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+/* Focus states for accessibility */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #0ea5e9;
+    outline-offset: 2px;
+}
+
+/* Selection color */
+::selection {
+    background-color: #0ea5e9;
+    color: white;
+}
